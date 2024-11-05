@@ -1,0 +1,10 @@
+[project]
+name = "salon-website"
+version = "0.1.0"
+description = "Homepage and CMS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.0.3",
+    "flask-sqlalchemy>=3.1.1",
+]

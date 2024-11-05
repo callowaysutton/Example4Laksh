@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: salon-website
+Version: 0.1.0
+Summary: Homepage and CMS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: flask>=3.0.3
+Requires-Dist: flask-sqlalchemy>=3.1.1
+
+# Salon Website

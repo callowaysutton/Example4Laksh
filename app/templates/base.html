@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link href="{{ url_for('static', filename='css/tailwind.min.css') }}" rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased bg-gray-100">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold text-purple-600">SalonName</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-purple-600">Services</a>
+                <a href="{{ url_for('web_logic.about') }}" class="text-gray-600 hover:text-purple-600">About Us</a>
+                <a href="#gallery" class="text-gray-600 hover:text-purple-600">Gallery</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-purple-600">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-purple-600">Contact</a>
+            </nav>
+            <a href="#appointment"
+                class="hidden md:inline-block px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Book
+                Appointment</a>
+            <button class="md:hidden focus:outline-none text-gray-600 hover:text-purple-600">
+                <!-- Mobile menu button (icon) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    {% block content %} {% endblock content %}
+</body>
+</html>

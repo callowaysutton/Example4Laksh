@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %} About Us {% endblock title %}
+
+{% block content %}
+<main>
+<!-- About Us Section -->
+<section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">About Us</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          At SalonName, we believe in enhancing your natural beauty with a personal touch. Our team of skilled professionals is dedicated to providing a relaxing, luxurious experience to make you look and feel amazing.
+        </p>
+      </div>
+      
+      <div class="mt-12 flex flex-col md:flex-row md:space-x-12">
+        <!-- About Content -->
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-gray-700">Our Mission</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Our mission is to provide exceptional beauty and wellness services tailored to meet the unique needs of every client. We strive to create a serene environment where you can unwind, relax, and enjoy the artistry of our skilled team. 
+          </p>
+          <h3 class="mt-8 text-2xl font-semibold text-gray-700">Our Values</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            We pride ourselves on professionalism, creativity, and a commitment to delivering results that exceed expectations. We value each client and aim to build lasting relationships grounded in trust and satisfaction.
+          </p>
+        </div>
+        
+        <!-- About Image -->
+        <div class="mt-8 md:mt-0 md:w-1/2">
+          <img src="https://example.com/salon-interior.jpg" alt="Salon Interior" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock content %}
